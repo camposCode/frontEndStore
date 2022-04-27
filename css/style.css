@@ -82,18 +82,34 @@ h3{
     padding: 1rem 0;
     display: flex;
     justify-content: center;
-    gap: 2rem;
 }
 
 .navegacion__enlace{
     color: var(--blanco);
     font-size: 3rem;
+    margin-right: 5rem;
+}
+
+.navegacion__enlace:last-of-type{
+    margin-right: 0;
 }
 
 .navegacion__enlace--activo,
 .navegacion__enlace:hover{
     color: var(--primario);
 }
+
+/* ////////////////////////
+/////////PRODUCTOS */
+.producto{}
+
+.producto__imagen{}
+
+.producto__informacion{}
+
+.producto__nombre{}
+
+.producto__precio{}
 
 /* ////////////////////////
 /////////FOOTER */
