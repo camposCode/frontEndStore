@@ -49,7 +49,7 @@ img{
 
 h1, h2, h3{
     text-align: center;
-    color: var(--secundario);
+    color: var(--primarioClaro);
 }
 
 h1{
