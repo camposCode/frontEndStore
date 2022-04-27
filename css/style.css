@@ -1,10 +1,13 @@
 :root{
-    --primario: #DEAFFA;
-    --primarioOscuro: #b03ff3;
-    --secundario: #ECFAAF;
-    --secundarioOscuro: #ddf66f;
+    --primario: #f9ce00;
+    --primarioOscuro: #a48800;
+    --primarioClaro: #ffe14f;
+    --secundario: #40d353;
+    --secundarioOscuro: #249a33;
+    --secundarioClaro: #85e391;
     --blanco: #ececec;
-    --negro: #000a14; 
+    --negro: #010409; 
+    --nav: #161b22;
 }
 
 html {
@@ -20,10 +23,11 @@ html {
 /////////GLOBALES */
 
 body{
-    background-color: var(--primario);
+    background-color: var(--negro);
     font-family: 'Nunito', sans-serif;
     font-size: 1.6rem;
     line-height: 1.5;
+    color: var(--blanco);
 }
 
 p{
@@ -74,7 +78,7 @@ h3{
 /* ////////////////////////
 /////////NAVEGACION */
 .navegacion{
-    background-color: var(--primarioOscuro);
+    background-color: var(--nav);
     padding: 1rem 0;
     display: flex;
     justify-content: center;
@@ -89,4 +93,16 @@ h3{
 .navegacion__enlace--activo,
 .navegacion__enlace:hover{
     color: var(--primario);
+}
+
+/* ////////////////////////
+/////////FOOTER */
+.footer{
+    background-color: var(--nav);
+    padding: 1rem 0;
+    margin-top: 3rem;
+}
+
+.footer__texto{
+    text-align: center;
 }
