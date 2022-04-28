@@ -36,6 +36,7 @@ p{
 
 a{
     text-decoration: none;
+    color: var(--primarioClaro);
 }
 
 img{
@@ -69,6 +70,7 @@ h3{
 .header{
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .header__logo{
@@ -100,23 +102,136 @@ h3{
 }
 
 /* ////////////////////////
+/////////GRID */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.grafico{
+    min-height: 30rem;
+}
+
+.grafico--camisetas{
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+    background-image: url(../img/grafico1.jpg);
+}
+
+.grafico--node{
+    background-image: url(../img/grafico2.jpg);
+    grid-column: 1 / 3;
+    grid-row: 8 / 9;
+}
+
+@media (min-width: 768px) {
+    .grafico--node{
+        grid-row: 5 / 6;
+        grid-column: 2 / 4;
+    }
+}
+
+/* ////////////////////////
 /////////PRODUCTOS */
-.producto{}
+.producto{
+    background-color: var(--nav);
+    padding: 1rem;
+}
 
-.producto__imagen{}
+.producto__imagen{
+    width: 100%;
+}
 
-.producto__informacion{}
+.producto__nombre{
+    font-size: 3rem;
+}
 
-.producto__nombre{}
+.producto__precio{
+    font-size: 2.3rem;
+    color: var(--primarioOscuro);
+}
 
-.producto__precio{}
+.producto__nombre,
+.producto__precio{
+    margin: 1rem 0;
+    text-align: center;
+    line-height: 1.2;
+}
+
+/* ////////////////////////
+/////////NOSOTROS */
+.nosotros{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+@media (min-width: 768px) {
+    .nosotros{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+.nosotros__contenido{
+
+}
+
+.nosotros__imagen{
+    grid-row: 1 / 2;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .nosotros__imagen{
+        grid-column: 2 / 3;
+    }
+}
+
+
+/* ////////////////////////
+/////////COMPRAR*/
+.comprar{
+    margin-bottom: 9rem;
+}
+.bloques{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .bloques{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.bloque{
+    text-align: center;
+}
+
+.bloque__titulo{
+    margin: 0;
+}
+
+.bloque__imagen{
+    width: 100%;
+}
+
 
 /* ////////////////////////
 /////////FOOTER */
 .footer{
     background-color: var(--nav);
-    padding: 1rem 0;
-    margin-top: 3rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer__texto{
